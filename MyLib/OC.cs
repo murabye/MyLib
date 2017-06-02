@@ -11,6 +11,7 @@ namespace MyLib
             Console.WriteLine("Для продолжение нажмите любую клавишу. \n" +
                               " Внимание! Текущая консоль будет очищена.");
             Console.ReadKey();
+            Console.Clear();
         }                                                    // ожидание клика
     }
 }

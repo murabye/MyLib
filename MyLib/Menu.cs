@@ -21,10 +21,9 @@ namespace MyLib
         // выбор пункта меню
         public int choise()
         {
-            Console.Clear();
             Console.WriteLine(description);
 
-            int previousTop = Console.CursorTop;
+            var previousTop = Console.CursorTop;
 
             // Описание переменных и массивов для программы вывода меню
             int currentIndex = 0, previousIndex = 0, i;
@@ -58,7 +57,7 @@ namespace MyLib
                 Console.ForegroundColor = ConsoleColor.Black; Console.BackgroundColor = ConsoleColor.Gray;
                 Console.Write(points[currentIndex]);
 
-                ConsoleKeyInfo keyInfo = Console.ReadKey(true);
+                var keyInfo = Console.ReadKey(true);
 
                 previousIndex = currentIndex;
                 switch (keyInfo.Key)
