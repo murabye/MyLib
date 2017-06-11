@@ -78,7 +78,7 @@ namespace MyLib
 
         public override string ToString()
         {
-            return surname + name + parentname;
+            return surname + name;
         }
     }
 }
